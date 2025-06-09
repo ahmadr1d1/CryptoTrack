@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CryptoTrack</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_search">Search</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_notification">Notification</string>
+
+    <!--    <string name="price_format">$%1$.2f</string>-->
+    <string name="change7dformat">%.2f%%</string>
+
+    <!-- TODO: Menu -->
+    <string name="share">Share</string>
+
+    <!-- TODO: News Page -->
+
+    <!-- TODO: Favorites Page -->
+    <string name="TabLayout">This is Tab Layout</string>
+    <string name="no_coins">No coins have been added to the favorites</string>
+    <string name="news_soon">Favorite News Page Under Development</string>
+
+    <!-- TODO: Detail Page -->
+    <string name="no_desc">No Description Available</string>
+    <!--    <string name="price_format_detail">$%s</string>-->
+    <string name="market_cap">Market Cap ⓘ</string>
+    <!--    <string name="market_cap_format">$%s</string>-->
+    <string name="volume_format">$%s</string>
+    <string name="total_supply_format">%1$s</string>
+    <string name="not_available">N/A</string>
+    <string name="wait_message_format" tools:ignore="PluralsCandidate">Wait %1$d minutes %2$d seconds before opening details again</string>
+
+    <!-- TODO: News Page -->
+    <string name="open_external_link_title">Open External Links?</string>
+    <string name="open_link_confirmation_message">You will open the following link in your browser:\n\n%1$s\n\nContinue?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cannot_open_link">Cannot open link.</string>
+    <string name="invalid_website_link">Invalid Website Link</string>
+
+    <!-- TODO: Image Description -->
+    <string name="image_coins">Image Coins</string>
+    <string name="chart_desc">Chart View</string>
+    <string name="btn_period_desc">Period</string>
+
+    <!-- TODO: Fragment Info -->
+    <string name="statistic_desc">Statistic</string>
+    <string name="volume24h_desc">Volume (24H) ⓘ</string>
+    <string name="fully_diluted_valuation_desc">Fully Diluted Valuation ⓘ</string>
+    <string name="circulating_supply_desc">Circulating Supply ⓘ</string>
+    <string name="total_supply_desc">Total Supply ⓘ</string>
+    <string name="mac_supply_desc">Max Supply ⓘ</string>
+    <string name="historical_data_desc">Historical Data</string>
+    <string name="h24_desc">24H High ⓘ</string>
+    <string name="ath_desc">All Time High ⓘ</string>
+    <string name="l24_desc">24H Low ⓘ</string>
+    <string name="atl_Desc">All Time Low ⓘ</string>
+    <string name="links_desc">Links</string>
+    <string name="website_desc">Website</string>
+    <string name="explores_desc">Explores</string>
+    <string name="community_desc">Community</string>
+    <string name="description">Description</string>
+
+    <!-- TODO: Fragment Overview -->
+    <string name="btn_currency_desc">USD</string>
+    <string name="btn_period_1h">1H</string>
+    <string name="btn_period_24h">24H</string>
+    <string name="btn_period_7d">7D</string>
+    <string name="btn_period_30d">1M</string>
+    <string name="btn_period_365d">1Y</string>
+    <string name="tv_24h">24H</string>
+    <string name="tv_7d">7D</string>
+    <string name="tv_14d">14D</string>
+    <string name="tv_30d">30D</string>
+
+
+    <string name="profile_soon">Profile Page Under Development</string>
+    <string name="searchbar_text">Search Coins</string>
+    <string name="news_wall">-</string>
+</resources>

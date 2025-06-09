@@ -1,0 +1,113 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "2abc8b0b07d27d17dd710b50bc636608",
+    "entities": [
+      {
+        "tableName": "favorite_coins",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`coinsId` TEXT NOT NULL, `name` TEXT NOT NULL, `symbol` TEXT NOT NULL, `imageUrl` TEXT, `homepageUrl` TEXT, `addedAt` INTEGER NOT NULL, PRIMARY KEY(`coinsId`))",
+        "fields": [
+          {
+            "fieldPath": "coinsId",
+            "columnName": "coinsId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "symbol",
+            "columnName": "symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "homepageUrl",
+            "columnName": "homepageUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "addedAt",
+            "columnName": "addedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "coinsId"
+          ]
+        }
+      },
+      {
+        "tableName": "favorite_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`newsId` INTEGER NOT NULL, `title` TEXT, `source` TEXT, `publishedAt` TEXT, `positiveVotes` INTEGER, `negativeVotes` INTEGER, `importantVotes` INTEGER, `addedAt` INTEGER NOT NULL, PRIMARY KEY(`newsId`))",
+        "fields": [
+          {
+            "fieldPath": "newsId",
+            "columnName": "newsId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "source",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "publishedAt",
+            "columnName": "publishedAt",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "positiveVotes",
+            "columnName": "positiveVotes",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "negativeVotes",
+            "columnName": "negativeVotes",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "importantVotes",
+            "columnName": "importantVotes",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "addedAt",
+            "columnName": "addedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "newsId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2abc8b0b07d27d17dd710b50bc636608')"
+    ]
+  }
+}
