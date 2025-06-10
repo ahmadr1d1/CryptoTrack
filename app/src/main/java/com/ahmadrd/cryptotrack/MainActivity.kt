@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
         navView.itemActiveIndicatorColor = colorStateList
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.
+            nav_host_fragment_activity_main) as? NavHostFragment
+                ?: throw IllegalStateException("NavHostFragment not found")
         val navController = navHostFragment.navController
         navView.setupWithNavController(navController)
     }
