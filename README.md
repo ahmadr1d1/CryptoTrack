@@ -1,6 +1,6 @@
 # 🪙 CryptoTrack
 
-**CryptoTrack** adalah aplikasi Android yang memungkinkan pengguna untuk memantau pasar cryptocurrency secara real-time, menjelajahi berita terbaru, dan menyimpan aset serta berita kripto favorit anda. Aplikasi ini dibangun dengan arsitektur modern Android dan mengintegrasikan berbagai API untuk menyajikan data yang akurat dan terkini.
+**CryptoTrack** adalah aplikasi Android yang memungkinkan pengguna untuk memantau pasar cryptocurrency secara real-time, menjelajahi berita terbaru, dan menyimpan aset serta berita kripto favorit anda. Aplikasi ini saya buat untuk mengasah skill yang saya peroleh dari kursus [Android Fundamental dari Dicoding](https://www.dicoding.com/academies/14-belajar-fundamental-aplikasi-android), oleh karena itu pada dasarnya konsep aplikasinya terlihat sama dengan [Aplikasi Submission Akhir Android Fundamental dari dicoding](https://github.com/ahmadr1d1/DicodingEvent). Aplikasi ini dibangun dengan arsitektur modern Android dan mengintegrasikan berbagai API untuk menyajikan data yang akurat dan terkini.
 
 ---
 
