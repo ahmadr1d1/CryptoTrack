@@ -19,7 +19,10 @@ class NewsAdapter : ListAdapter<NewsTypeTrendingItem, NewsAdapter.ViewHolder>(DI
     companion object {
         val DIFF_CALLBACK =
             object : DiffUtil.ItemCallback<NewsTypeTrendingItem>() {
-                override fun areItemsTheSame(oldItem: NewsTypeTrendingItem, newItem: NewsTypeTrendingItem): Boolean {
+                override fun areItemsTheSame(
+                    oldItem: NewsTypeTrendingItem,
+                    newItem: NewsTypeTrendingItem
+                ): Boolean {
                     return oldItem.id == newItem.id
                 }
 
@@ -48,17 +51,30 @@ class NewsAdapter : ListAdapter<NewsTypeTrendingItem, NewsAdapter.ViewHolder>(DI
 
                     AlertDialog.Builder(context)
                         .setTitle(context.getString(R.string.open_external_link_title))
-                        .setMessage(context.getString(R.string.open_link_confirmation_message, urlValue))
+                        .setMessage(
+                            context.getString(
+                                R.string.open_link_confirmation_message,
+                                urlValue
+                            )
+                        )
                         .setPositiveButton(context.getString(R.string.yes)) { dialog, _ ->
                             if (urlValue.isNotBlank()) {
                                 try {
                                     val intent = Intent(Intent.ACTION_VIEW, urlValue.toUri())
                                     context.startActivity(intent)
                                 } catch (e: Exception) {
-                                    Toast.makeText(context, context.getString(R.string.cannot_open_link), Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(
+                                        context,
+                                        context.getString(R.string.cannot_open_link),
+                                        Toast.LENGTH_SHORT
+                                    ).show()
                                 }
                             } else {
-                                Toast.makeText(context, context.getString(R.string.invalid_website_link), Toast.LENGTH_SHORT).show()
+                                Toast.makeText(
+                                    context,
+                                    context.getString(R.string.invalid_website_link),
+                                    Toast.LENGTH_SHORT
+                                ).show()
                             }
 
                             dialog.dismiss()
@@ -68,6 +84,14 @@ class NewsAdapter : ListAdapter<NewsTypeTrendingItem, NewsAdapter.ViewHolder>(DI
                         }
                         .show()
                 }
+            }
+
+            binding.favoriteButtonNews.setOnClickListener {
+                Toast.makeText(
+                    binding.root.context,
+                    "Feature not available yet",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
